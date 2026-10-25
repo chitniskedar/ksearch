@@ -26,7 +26,18 @@ mingw32-make debug
 The MinGW GCC originally used for this workspace is too old to build the
 sanitizer configuration; use a current MinGW-w64 GCC for that command.
 
-On Linux or macOS:
+Linux (Debian or Ubuntu):
+
+```sh
+sudo apt update
+sudo apt install build-essential
+make clean all test
+```
+
+On Fedora, install the compiler toolchain with `sudo dnf groupinstall "Development Tools"`;
+on Arch Linux, use `sudo pacman -S base-devel`. Then run `make clean all test`.
+
+On macOS, install the Xcode Command Line Tools (`xcode-select --install`), then run:
 
 ```sh
 make clean all test
