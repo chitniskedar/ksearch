@@ -1,0 +1,17 @@
+# Build output
+build/
+*.o
+*.obj
+*.exe
+ksearch
+ksearch-tests
+
+# Local KSearch index data
+documents.dat
+meta.dat
+last_results.dat
+
+# Test fixtures and operating-system files
+tests/.testdata/
+.DS_Store
+Thumbs.db
